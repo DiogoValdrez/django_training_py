@@ -1,0 +1,56 @@
+Read reviews: https://app.pluralsight.com/library/courses/django-getting-started/transcript
+
+
+virtualenv django_t                                       #create virtual env
+
+
+. ~/code/virtualenvs/django_t/bin/activate                #activate venv
+
+
+deactivate                                                #deactivate venv
+
+
+pip install django
+
+
+NÃO ESQUECER IMPORTAR
+
+
+django-admin startproject meeting_planner                 #start project for te first time
+
+
+cd meeting_planner/
+python3 manage.py runserver                               #run server
+
+
+1-python3 manage.py startapp firstpage                    #start new app
+2-add to settings (installed apps)
+3-create something in views
+4-add url in path
+
+
+1-python3 manage.py startapp firstpage                     #start new model app
+2-add to settings (installed apps)
+3-create a model in models.py
+4-admin.site.register(Meeting)   (on admin.py)             #make usable on admin
+
+
+python manage.py dbshell                                   #see database(might have to install sqlite3)
+
+
+pyhton manage.py makemigrations                            #create migration files(commit)
+python manage.py migrate                                   #migrate(push)
+
+
+python manage.py sqlmigrate meetings 0001                  #watch what nº migrate did on model meetings
+
+
+python manage.py createsuperuser                           #create super user(admin)
+
+
+delete migrates and database to clean database             #will lose everything(including superuser)
+
+
+1-new folder called templates(in the app folder)           #create template
+2-new folder with the apps name
+3-new html file
