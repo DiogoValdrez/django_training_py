@@ -24,4 +24,5 @@ urlpatterns = [
     path('date', date),
     path('about', about),
     path('meetings/', include('meetings.urls')),
+    path('store/', include('store.urls')),
 ]

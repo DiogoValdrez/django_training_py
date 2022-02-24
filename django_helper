@@ -11,6 +11,7 @@ deactivate                                                #deactivate venv
 
 
 pip install django
+pip install django-livesync(e adicionar livesync nas installed apps)(livesync.core.middleware.DjangoLiveSyncMiddleware, na cena abaixo das apps)
 
 
 NÃO ESQUECER IMPORTAR
@@ -49,6 +50,7 @@ python manage.py createsuperuser                           #create super user(ad
 
 
 delete migrates and database to clean database             #will lose everything(including superuser)
+manage.py makemigrations <app_label> in case it doesnt work
 
 
 1-new folder called templates(in the app folder)           #create template
